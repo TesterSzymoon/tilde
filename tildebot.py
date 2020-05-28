@@ -1,3 +1,6 @@
+#tokens (written by me) library not included.
+#by sszymoon#7106
+
 import tokens
 from PIL import Image
 import urllib.parse
@@ -16,6 +19,10 @@ async def on_ready():
 @bot.event
 async def on_command_error(ctx, error):
     await ctx.send('An error raised while executing command: `{0}`'.format(error))
+    
+@bot.command()
+async def mute(ctx, time):
+    pass
 
 @bot.command(aliases=['vis_color','colour','vis_colour'])
 async def color(ctx, hexval):
