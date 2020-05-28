@@ -21,7 +21,7 @@ async def on_command_error(ctx, error):
     await ctx.send('An error raised while executing command: `{0}`'.format(error))
     
 @bot.command()
-async def mute(ctx, time):
+async def ban(ctx, reason):
     pass
 
 @bot.command(aliases=['vis_color','colour','vis_colour'])
